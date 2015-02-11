@@ -6,11 +6,36 @@ There are multiple extensions for brining tagging functionality into Yii but **T
 
 We'll use the following `posts` table as an example.
 
-| id | post\_title           | post\_body        | tags                           |
-| -- | --------------------- | ----------------- | ------------------------------ |
-| 1  | My first post!        | body of new blog  | welcome                        |
-| 2  | Why Tagging is great  | some more content | yii2-tagging,tutorial          |
-| 3  | Advanced Tagging tips | most recent post  | yii2-tagging,tutorial,advanced |
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>post_title</th>
+            <th>post_body</th>
+            <th>tags</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>My first post!</td>
+            <td>body of new blog</td>
+            <td>welcome</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Why Tagging is great</td>
+            <td>some more content</td>
+            <td>yii2-tagging,tutorial</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Advanced Tagging tips</td>
+            <td>most recent post</td>
+            <td>yii2-tagging,tutorial,advanced</td>
+        </tr>
+    </tbody>
+</table>
 
 Tagging includes two classes: _TaggingQuery_ and _TaggingWidget_.  _TaggingQuery_ returns a php array which can be used in form's select field or as input to _TaggingWidget_ which can display the tags as a list or tag cloud.
 
