@@ -99,7 +99,7 @@ class TaggingWidget extends Widget
         }
         $items = [];
         foreach ($this->items as $name => $count) {
-            $items[] = $this->renderItem($name, $count);
+            $items[] = $this->renderItem(Html::encode($name), $count);
         }
         if ($this->format == 'cloud') {
             Html::addCssClass($this->listOptions, 'tagging_cloud');
